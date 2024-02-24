@@ -1,0 +1,19 @@
+.heading {
+  color: #fff;
+  text-align: center;
+  font-family: 'Space Mono';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 100% */
+  letter-spacing: -1.786px;
+}
+.para {
+  color: #fff;
+  text-align: center;
+  font-family: 'Lexend Deca';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}

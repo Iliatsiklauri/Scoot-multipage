@@ -1,0 +1,28 @@
+import Imgtext from '../Components/Imgtext';
+import Topcomp from '../Components/Topcomp';
+
+const About = () => {
+  return (
+    <div className="flex flex-col justify-center items-center gap-20">
+      <Topcomp text="About" />
+      <Imgtext
+        display={false}
+        heading="Mobility for the digital era"
+        text="Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips."
+        side="right"
+        src="public\assets\images\digital-era.jpg"
+        src1="public\assets\patterns\left-upward-arrow.svg"
+      />
+      <Imgtext
+        display={false}
+        heading="Better urban living"
+        text="We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride."
+        side="left"
+        src="public\assets\images\better-living.jpg"
+        src1="public\assets\patterns\right-arrow.svg"
+      />
+    </div>
+  );
+};
+
+export default About;
