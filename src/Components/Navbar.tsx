@@ -6,9 +6,9 @@ const Navbar = ({ toggleMenu }: propsType) => {
   return (
     <nav className="w-full h-[64px] relative flex items-center justify-center">
       <img
-        src="public\assets\icons\hamburger.svg"
+        src="assets\icons\hamburger.svg"
         alt=""
-        className="absolute left-8 top-6"
+        className="absolute left-8 top-6 cursor-pointer"
         onClick={toggleMenu}
       />
       <img src="public\assets\logo.svg" alt="" className="w-[75px] h-5" />
