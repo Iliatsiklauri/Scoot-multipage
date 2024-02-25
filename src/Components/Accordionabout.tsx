@@ -5,13 +5,13 @@ const Accordionabout = () => {
     title: string;
     text: string;
   };
-  const [selected, setSelected] = useState(null);
-  const [selected1, setSelected1] = useState(null);
+  const [selected, setSelected] = useState<number | null>(null);
+  const [selected1, setSelected1] = useState<number | null>(null);
   const toggle = (i: number) => {
-    setSelected((prev: number) => (prev === i ? null : i));
+    setSelected((prev: number | null) => (prev === i ? null : i));
   };
   const toggle1 = (i: number) => {
-    setSelected1((prev: number) => (prev === i ? null : i));
+    setSelected1((prev: number | null) => (prev === i ? null : i));
   };
   const arr = [
     {
