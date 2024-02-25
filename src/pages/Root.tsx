@@ -1,48 +1,42 @@
 import { Outlet } from 'react-router-dom';
+import Rootfooter from '../Components/Rootfooter';
+import { useRef, useState } from 'react';
+import Slider from '../Components/Slider';
+import Navbar from '../Components/Navbar';
 
 const Root = () => {
+  const bottomRef = useRef(null);
+  const [display, setDisplay] = useState(true);
+
+  const toggleMenu = () => {
+    setDisplay(!display);
+  };
+
+  const scrollToBottom = async () => {
+    setDisplay(!display);
+
+    await new Promise((resolve) => setTimeout(resolve, 500));
+
+    if (bottomRef.current) {
+      (bottomRef.current as HTMLElement).scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="w-full">
-      <nav className="w-full h-[64px] relative flex items-center justify-center">
-        <img
-          src="public\assets\icons\hamburger.svg"
-          alt=""
-          className="absolute left-8 top-6"
-        />
-        <img src="public\assets\logo.svg" alt="" className="w-[75px] h-5" />
-      </nav>
+    <div className={`w-full relative ${display ? null : 'h-screen overflow-hidden'}`}>
+      <Navbar toggleMenu={toggleMenu} />
+      <Slider display={display} toggleMenu={toggleMenu} scrollToBottom={scrollToBottom} />
+      <div
+        className={`w-full h-full bg-black z-10  absolute transition-opacity duration-500 ease-in-out ${
+          display ? 'opacity-0 hidden' : 'opacity-85'
+        }`}
+      ></div>
+
       <Outlet />
-      <footer className="text-white flex flex-col items-center w-full justify-center">
-        <div className="w-full h-[320px] gap-10 flex flex-col items-center justify-center bg-[#495567]">
-          <h2
-            className="w-[85%] text-center text-2xl font-bold leading-8 tracking-tight
-"
-          >
-            Sign up and Scoot off today
-          </h2>
-          <div className="flex gap-4">
-            <img className="w-32" src="public\assets\icons\app-store.svg" alt="" />
-            <img className="w-32" src="public\assets\icons\google-play.svg" alt="" />
-          </div>
-        </div>
-        <div className="bg-[#333A44] w-full h-[435px] flex flex-col items-center justify-around">
-          <img src="public\assets\whitelogo.svg" alt="" className="fill-white" />
-          <div className="flex flex-col items-center justify-center gap-4">
-            <p className="text-[#939CAA] font-mono text-lg font-bold leading-6">About</p>
-            <p className="text-[#939CAA] font-mono text-lg font-bold leading-6">
-              Location
-            </p>
-            <p className="text-[#939CAA] font-mono text-lg font-bold leading-6">
-              Careers
-            </p>
-          </div>
-          <div className="flex justify-between items-center w-[120px]">
-            <img src="public\assets\icons\facebook.svg" alt="" />
-            <img src="public\assets\icons\twitter.svg" alt="" />
-            <img src="public\assets\icons\instagram.svg" alt="" />
-          </div>
-        </div>
-      </footer>
+      <div>
+        <Rootfooter />
+      </div>
+      <div ref={bottomRef}></div>
     </div>
   );
 };

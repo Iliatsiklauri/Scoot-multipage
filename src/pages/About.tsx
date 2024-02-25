@@ -1,3 +1,5 @@
+import Aboutimg from '../Components/Aboutimg';
+import Accordionabout from '../Components/Accordionabout';
 import Imgtext from '../Components/Imgtext';
 import Topcomp from '../Components/Topcomp';
 
@@ -21,6 +23,8 @@ const About = () => {
         src="public\assets\images\better-living.jpg"
         src1="public\assets\patterns\right-arrow.svg"
       />
+      <Aboutimg />
+      <Accordionabout />
     </div>
   );
 };
