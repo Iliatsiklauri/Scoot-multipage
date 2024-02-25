@@ -46,7 +46,7 @@ const Slider = ({ display, toggleMenu, scrollToBottom }: propType) => {
           scrollToBottom();
         }}
       >
-        <Button text="Get Scootin" scrollToBottom={scrollToBottom} />
+        <Button text="Get Scootin" />
       </div>
     </div>
   );
