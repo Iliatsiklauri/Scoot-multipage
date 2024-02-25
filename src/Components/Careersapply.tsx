@@ -7,17 +7,17 @@ type propType = {
 
 const Box = ({ title, text }: propType) => {
   return (
-    <div className=" bg-[#F2F5F9] w-full h-[190px] flex flex-col items-center justify-center gap-4">
-      <div>
+    <div className=" bg-[#F2F5F9] w-full h-[190px] md:flex-row md:justify-around flex flex-col items-center justify-center gap-4 xl:justify-around">
+      <div className="xl:w-[40%]">
         <h2
-          className="text-[#495567] text-center text-base font-bold leading-6 tracking-tighter
-        "
+          className="text-[#495567] text-center md:text-left text-base font-bold leading-6 tracking-tighter
+          "
         >
           {title}
         </h2>
         <h2
-          className="text-[#495567] text-center text-sm font-normal leading-6
-        "
+          className="text-[#495567] text-center md:text-left text-sm font-normal leading-6
+          "
         >
           {text}
         </h2>

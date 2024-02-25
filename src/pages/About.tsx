@@ -5,7 +5,7 @@ import Topcomp from '../Components/Topcomp';
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-20">
+    <div className="flex flex-col justify-center items-center gap-20 overflow-hidden relative">
       <Topcomp text="About" />
       <Imgtext
         display={false}
@@ -14,6 +14,16 @@ const About = () => {
         side="right"
         src="assets\images\digital-era.jpg"
         src1="assets\patterns\left-upward-arrow.svg"
+      />
+      <img
+        src="assets\patterns\circle.svg"
+        alt=""
+        className="hidden md:block absolute top-56 right-[-350px]"
+      />
+      <img
+        src="assets\patterns\circle.svg"
+        alt=""
+        className="hidden md:block absolute top-[24%] xl:top-[28%] left-[-340px]"
       />
       <Imgtext
         display={false}

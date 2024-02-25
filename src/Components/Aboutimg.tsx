@@ -43,7 +43,7 @@ const Aboutimg = ({ optional }: { optional?: string }) => {
       <h2 className="text-[#495567] text-center text-3xl font-bold leading-8 tracking-tighter">
         {optional ? optional : 'Our Values'}
       </h2>
-      <div className="flex flex-col items-center justify-center gap-10">
+      <div className="flex flex-col items-center justify-center gap-10 xl:flex-row xl:w-[80%]">
         <Child
           img="assets\images\our-tech.jpg"
           text="We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!"

@@ -2,7 +2,8 @@ import ContentChild from './ContentChild';
 
 const Content = () => {
   return (
-    <div className="w-[full] flex flex-col items-center justify-center gap-12 mt-40">
+    <div className="w-[full] flex flex-col items-center justify-center gap-12 mt-40 md:relative xl:flex-row">
+      <div className="hidden md:block absolute w-2 h-full bg-[#E5ECF4] left-6 top-[-100px] xl:h-3 xl:w-[1060px] xl:left-[-180px] xl:top-6"></div>
       <ContentChild
         heading="Locate with app"
         src="assets\icons\locate.svg"

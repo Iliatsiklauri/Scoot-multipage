@@ -44,22 +44,22 @@ const Accordionabout = () => {
   return (
     <div className="flex flex-col gap-12 w-[85%] mb-32">
       <h2
-        className="text-[#495567] text-center text-2xl font-bold leading-8 tracking-tighter
+        className="text-[#495567] text-center text-2xl md:text-4xl font-bold leading-8 tracking-tighter
 "
       >
         FAQS
       </h2>
-      <div className=" flex flex-col gap-5">
+      <div className=" flex flex-col gap-5 xl:flex-row xl:justify-between">
         <h2
-          className="text-[#495567] text-center text-xl font-bold leading-7 tracking-tighter
+          className="text-[#495567] text-center text-xl md:text-3xl font-bold leading-7 tracking-tighter
 "
         >
           How it works
         </h2>
-        <div className="flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col items-center justify-center gap-4 xl:w-[70%]">
           {arr.map((obj: propsType, key: number) => (
             <div
-              className="bg-[#F2F5F9] w-full p-6 gap-4 flex flex-col"
+              className="bg-[#F2F5F9] hover:bg-[#FFF4DF]  w-full p-6 gap-4 flex flex-col cursor-pointer"
               key={key}
               onClick={() => {
                 toggle1(key);
@@ -67,7 +67,7 @@ const Accordionabout = () => {
             >
               <div className="flex items-center justify-between">
                 <h2
-                  className="text-[#495567] font-mono text-base font-bold leading-6 tracking-tighter
+                  className="text-[#495567] font-mono text-base font-bold leading-6 tracking-tighter 
                 "
                 >
                   {obj.title}
@@ -96,17 +96,17 @@ const Accordionabout = () => {
           ))}
         </div>
       </div>
-      <div className=" flex flex-col gap-5">
+      <div className=" flex flex-col gap-5 xl:flex-row xl:justify-between">
         <h2
-          className="text-[#495567] text-center text-xl font-bold leading-7 tracking-tighter
+          className="text-[#495567] text-center text-xl md:text-3xl font-bold leading-7 tracking-tighter
 "
         >
           Safe driving
         </h2>
-        <div className="flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col items-center justify-center gap-4 cursor-pointer xl:w-[70%]">
           {arr1.map((obj: propsType, key: number) => (
             <div
-              className="bg-[#F2F5F9] w-full p-6 gap-4 flex flex-col"
+              className="bg-[#F2F5F9]  hover:bg-[#FFF4DF] w-full p-6 gap-4 flex flex-col"
               key={key}
               onClick={() => toggle(key)}
             >

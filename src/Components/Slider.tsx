@@ -10,7 +10,7 @@ type propType = {
 const Slider = ({ display, toggleMenu, scrollToBottom }: propType) => {
   return (
     <div
-      className={`z-20 w-[70%] bg-[#333A44;] h-screen absolute transition-all duration-500 ease-in-out flex flex-col gap-80 ${
+      className={`z-20 w-[70%] bg-[#333A44;] h-screen absolute transition-all duration-500 ease-in-out flex flex-col gap-80 md:hidden ${
         display ? 'left-[-70%]' : 'left-0'
       }`}
     >
@@ -46,7 +46,7 @@ const Slider = ({ display, toggleMenu, scrollToBottom }: propType) => {
           scrollToBottom();
         }}
       >
-        <Button text="Get Scootin" />
+        <Button text="Get Scootin" scrollToBottom={scrollToBottom} />
       </div>
     </div>
   );

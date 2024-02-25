@@ -1,9 +1,9 @@
 const Careersdiv = () => {
   return (
-    <div className="flex flex-col w-full gap-4">
+    <div className="flex flex-col w-[100%] gap-4 xl:w-[80%]">
       <div className="h-16 w-full bg-[#FCB72B26] flex items-center justify-center">
         <h2
-          className="text-[#495567] text-center text-xl font-bold leading-7 tracking-tighter
+          className="text-[#495567] text-center w-full text-xl font-bold leading-7 tracking-tighter
 "
         >
           New York
@@ -11,7 +11,7 @@ const Careersdiv = () => {
       </div>
       <div className="h-16 w-full bg-[#FCB72B26] flex items-center justify-center">
         <h2
-          className="text-[#495567] text-center text-xl font-bold leading-7 tracking-tighter
+          className="text-[#495567] text-center w-full text-xl font-bold leading-7 tracking-tighter
 "
         >
           London
@@ -19,7 +19,7 @@ const Careersdiv = () => {
       </div>
       <div className="h-16 w-full bg-[#FCB72B26] flex items-center justify-center">
         <h2
-          className="text-[#495567] text-center text-xl font-bold leading-7 tracking-tighter
+          className="text-[#495567] text-center w-full text-xl font-bold leading-7 tracking-tighter
 "
         >
           Jakarta
@@ -27,7 +27,7 @@ const Careersdiv = () => {
       </div>
       <div className="h-16 w-full bg-[#FCB72B26] flex items-center justify-center">
         <h2
-          className="text-[#495567] text-center text-xl font-bold leading-7 tracking-tighter
+          className="text-[#495567] text-center w-full text-xl font-bold leading-7 tracking-tighter
 "
         >
           Yokohama

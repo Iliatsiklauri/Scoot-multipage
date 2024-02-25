@@ -15,7 +15,7 @@ const Root = () => {
   const scrollToBottom = async () => {
     setDisplay(!display);
 
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    await new Promise((resolve) => setTimeout(resolve, 200));
 
     if (bottomRef.current) {
       (bottomRef.current as HTMLElement).scrollIntoView({ behavior: 'smooth' });
@@ -23,11 +23,15 @@ const Root = () => {
   };
 
   return (
-    <div className={`w-full relative ${display ? null : 'h-screen overflow-hidden'}`}>
-      <Navbar toggleMenu={toggleMenu} />
+    <div
+      className={`w-full relative md:overflow-auto ${
+        display ? null : 'h-screen overflow-hidden'
+      }`}
+    >
+      <Navbar toggleMenu={toggleMenu} scrollToBottom={scrollToBottom} />
       <Slider display={display} toggleMenu={toggleMenu} scrollToBottom={scrollToBottom} />
       <div
-        className={`w-full h-full bg-black z-10  absolute transition-opacity duration-500 ease-in-out ${
+        className={`w-full md:hidden h-full bg-black z-10  absolute transition-opacity duration-500 ease-in-out ${
           display ? 'opacity-0 hidden' : 'opacity-85'
         }`}
       ></div>
