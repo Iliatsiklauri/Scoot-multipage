@@ -11,7 +11,7 @@ const Navbar = ({ toggleMenu }: propsType) => {
         className="absolute left-8 top-6 cursor-pointer"
         onClick={toggleMenu}
       />
-      <img src="public\assets\logo.svg" alt="" className="w-[75px] h-5" />
+      <img src="assets\logo.svg" alt="" className="w-[75px] h-5" />
     </nav>
   );
 };

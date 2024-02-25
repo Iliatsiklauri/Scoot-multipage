@@ -74,14 +74,14 @@ const Accordionabout = () => {
                 </h2>
                 {selected1 === key ? (
                   <img
-                    src="public\assets\icons\chevron.svg"
+                    src="assets\icons\chevron.svg"
                     alt=""
                     className="transition-transform ease-in-out duration-300 transform rotate-180
 
                   "
                   />
                 ) : (
-                  <img src="public\assets\icons\chevron.svg" alt="" />
+                  <img src="assets\icons\chevron.svg" alt="" />
                 )}
               </div>
               {selected1 === key ? (
@@ -119,14 +119,14 @@ const Accordionabout = () => {
                 </h2>
                 {selected === key ? (
                   <img
-                    src="public\assets\icons\chevron.svg"
+                    src="assets\icons\chevron.svg"
                     alt=""
                     className="transition-transform ease-in-out duration-300 transform rotate-180
 
                   "
                   />
                 ) : (
-                  <img src="public\assets\icons\chevron.svg" alt="" />
+                  <img src="assets\icons\chevron.svg" alt="" />
                 )}
               </div>
               {selected === key ? (

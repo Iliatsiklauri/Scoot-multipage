@@ -45,19 +45,19 @@ const Aboutimg = ({ optional }: { optional?: string }) => {
       </h2>
       <div className="flex flex-col items-center justify-center gap-10">
         <Child
-          img="public\assets\images\our-tech.jpg"
+          img="assets\images\our-tech.jpg"
           text="We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!"
           title="Our tech"
           num="01"
         />
         <Child
-          img="public\assets\images\our-integrity.jpg"
+          img="assets\images\our-integrity.jpg"
           num="02"
           text="We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve."
           title="Our integrity"
         />
         <Child
-          img="public\assets\images\our-community.jpg"
+          img="assets\images\our-community.jpg"
           num="03"
           text="We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees."
           title="Our community"
