@@ -12,8 +12,8 @@ const Careers = () => {
           display={true}
           heading="Care to join our mission?"
           side="right"
-          src="public\assets\images\join-us.jpg"
-          src1="public\assets\patterns\left-downward-arrow.svg"
+          src="assets\images\join-us.jpg"
+          src1="assets\patterns\left-downward-arrow.svg"
           text="We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!"
         />
         <Aboutimg optional="Why join us ?" />
