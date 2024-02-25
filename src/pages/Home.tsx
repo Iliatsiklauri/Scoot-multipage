@@ -13,13 +13,13 @@ const Home = () => {
     }
   };
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center  xl:relative overflow-hidden">
       <div className="relative home text-white flex flex-col items-center justify-center gap-12 md:overflow-hidden xl:h-[615px]">
-        <div className="w-[85%] gap-6 xl:absolute left-[165px] xl:top-[150px] xl:w-[500px] xl:items-start flex flex-col items-center justify-center ">
+        <div className="w-[85%] gap-6 xl:absolute left-[165px] xl:top-[150px] xl:w-[500px] xl:items-start flex flex-col items-center justify-center">
           <h2 className="heading md:w-[60%] xl:w-[80%] xl:text-left">
             Scooter sharing made simple
           </h2>
-          <p className="para xl:text-left ml-[100px]">
+          <p className="para xl:text-left xl:ml-[100px]">
             Scoot takes the hassle out of urban mobility. Our bikes are placed in
             convenient locations in each of our cities. Use our app to locate the nearest
             bike, unlock it with a tap, and youre away!
@@ -35,7 +35,7 @@ const Home = () => {
           className="absolute left-0  md:hidden bottom-5"
         />
         <img
-          src="public\assets\patterns\line.svg"
+          src="assets\patterns\line.svg"
           alt=""
           className="hidden xl:block absolute left-0"
         />
@@ -51,7 +51,7 @@ const Home = () => {
         />
       </div>
       <Content />
-      <div className="flex items-center justify-center flex-col gap-28 mt-20 mb-20 overflow-hidden relative w-full">
+      <div className="flex items-center justify-center flex-col gap-28 mt-20 mb-20 overflow-hidden relative w-full]">
         <div>
           <img
             src="assets\patterns\circle.svg"

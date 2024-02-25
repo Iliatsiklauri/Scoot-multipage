@@ -10,7 +10,7 @@ type propsType = {
 };
 const Imgtext = ({ text, heading, src, src1, side, display }: propsType) => {
   return (
-    <div className="overflow-hidden w-full flex flex-col items-center justify-center xl:justify-around gap-10 relative xl:flex-row xl:w-screen xl:items-start ">
+    <div className="overflow-hidden w-full flex flex-col items-center justify-center gap-10 relative xl:flex-row xl:w-screen xl:items-center xl:justify-center xl:gap-48">
       <img
         src={`${src1}`}
         alt=""
