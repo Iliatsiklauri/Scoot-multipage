@@ -5,8 +5,8 @@ import './home.css';
 const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="home text-white flex flex-col items-center justify-center gap-12">
-        <div className="w-[85%] gap-6 flex flex-col items-center justify-center">
+      <div className="relative home text-white flex flex-col items-center justify-center gap-12 ">
+        <div className="w-[85%] gap-6 flex flex-col items-center justify-center ">
           <h2 className="heading">Scooter sharing made simple</h2>
           <p className="para">
             Scoot takes the hassle out of urban mobility. Our bikes are placed in
@@ -18,7 +18,7 @@ const Home = () => {
         <img
           src="assets\patterns\Group 8 Copy.png"
           alt=""
-          className="absolute left-0 bottom-[0]"
+          className="absolute left-0 bottom-5"
         />
       </div>
       <Content />
