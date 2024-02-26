@@ -28,7 +28,7 @@ const Root = () => {
         display ? null : 'h-screen overflow-hidden'
       }`}
     >
-      <Navbar toggleMenu={toggleMenu} scrollToBottom={scrollToBottom} />
+      <Navbar toggleMenu={toggleMenu} scrollToBottom={scrollToBottom} display={display} />
       <Slider display={display} toggleMenu={toggleMenu} scrollToBottom={scrollToBottom} />
       <div
         className={`w-full md:hidden h-full bg-black z-10  absolute transition-opacity duration-500 ease-in-out ${

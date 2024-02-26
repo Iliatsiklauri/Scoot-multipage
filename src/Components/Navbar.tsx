@@ -3,18 +3,28 @@ import { Link } from 'react-router-dom';
 type propsType = {
   toggleMenu: () => void;
   scrollToBottom?: () => void;
+  display: boolean;
 };
 
-const Navbar = ({ toggleMenu, scrollToBottom }: propsType) => {
+const Navbar = ({ toggleMenu, scrollToBottom, display }: propsType) => {
   return (
     <nav className="w-full h-[64px] md:h-[96px] xl:h-[80px] relative flex items-center justify-center md:justify-around">
       <img src="assets\logo.svg" alt="" className="w-[75px] h-5" />
-      <img
-        src="assets\icons\hamburger.svg"
-        alt=""
-        className="absolute left-8 top-6 cursor-pointer md:hidden"
-        onClick={toggleMenu}
-      />
+      {!display ? (
+        <img
+          src="assets\icons\close.svg"
+          alt=""
+          className="absolute left-8 top-6 cursor-pointer md:hidden"
+          onClick={toggleMenu}
+        />
+      ) : (
+        <img
+          src="assets\icons\hamburger.svg"
+          alt=""
+          className="absolute left-8 top-6 cursor-pointer md:hidden"
+          onClick={toggleMenu}
+        />
+      )}
       <div className="hidden h-[25px] md:flex gap-8 xl:mr-[500px]">
         <Link to="about">
           <h2 className="hover:text-[#FCB72B]">About</h2>
